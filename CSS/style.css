@@ -173,3 +173,29 @@ td {
 
 
 /* .slideshow */
+#slideShow{
+    width: 1299px;
+	height: 190px;
+    margin: 0 auto;
+}
+#num{
+    margin: 0 auto;
+    width: 1299px;
+    height: 40px;
+    position: relative;
+}
+
+.slide_right,.slide_left{
+    height: 40px;
+    width: 30px;
+    position: absolute;
+}
+.slide_right{
+    top: 188px;
+    right:0 ;
+}
+.slide_left{
+    left:0 ;
+    top: 188px;
+
+}

@@ -27,7 +27,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body ¦Ïnl¦Ïad="showImg()">
     <!-- header ²¿·Ö -->
     <div class="header">
 
@@ -112,18 +112,18 @@
         
     </div>
     <!-- .slideshow -->
-    <div class="slideShow">
+    <div id="slideShow" >
 
         <div id="num">
-            <input type="button" name="num1" id="num1" value="1" ¦Ïnclick="showImg(1)"/>
-            <input type="button" name="num2" id="num2" value="2" ¦Ïnclick="showImg(2)"/>
-            <input type="button" name="num3" id="num3" value="3" ¦Ïnclick="showImg(3)"/>
-            <input type="button" name="num4" id="num4" value="4" ¦Ïnclick="showImg(4)"/>
+            <img class="slide_right" onclick="showImg(1)" src="./Images/slide_right.png" alt="">
+            <img class="slide_left" onclick="showImg(-1)" src="./Images/slide_right.png" alt="">
         </div>
 
     </div>
 </body>
+<script src="./JS/main.js"></script>
 </html>
+
 
 
 <!-- <table border="0" cellspacing="0" cellpadding="0" align="left">
