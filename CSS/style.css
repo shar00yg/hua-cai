@@ -173,29 +173,74 @@ td {
 
 
 /* .slideshow */
-#slideShow{
-    width: 1299px;
-	height: 190px;
-    margin: 0 auto;
+.slide {
+    display: flex;
+    position: relative;
+    left: 0;
 }
-#num{
-    margin: 0 auto;
+
+.carousel {
+    overflow: hidden;
+    width: 500px;
     width: 1299px;
-    height: 40px;
+
+}
+
+.btn {
+    /* width: 50px;
+    height: 50px;
+    cursor: pointer; */
+    width: 41px;
+	height: 64px;
+	background-color: #707070;
+	opacity: 0.8;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    width: 1299px;
     position: relative;
 }
 
-.slide_right,.slide_left{
-    height: 40px;
-    width: 30px;
-    position: absolute;
+.indicator {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
-.slide_right{
-    top: 188px;
-    right:0 ;
-}
-.slide_left{
-    left:0 ;
-    top: 188px;
 
+.indicator li {
+    list-style: none;
+    border: 8px solid #999;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+li.li-active {
+    border: 8px solid red;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.contain {
+    width: 1299px;
+    position: relative;
+    margin: 0 auto;
+}
+button{
+    border: none;
+    background: none;
+    outline: none;
+    position: absolute;
+    padding: 0;
+}
+.left{
+    left: 0 ;
+    z-index: 1;
+}
+.right{
+    right: 0;
 }
