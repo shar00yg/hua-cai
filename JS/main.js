@@ -21,11 +21,11 @@ window.onload = function () {
     //点击左边按钮
     leftBtn.onclick = function () {
         if (index == 0) {
-            play(-(1299 * (slideLength - 2)),slideLength - 2,0);
+            play(-(1299 * (slideLength - 2)));
             index = slideLength - 2;
         } else {
             index--;
-            play(-(1299 * index),index,index +1);
+            play(-(1299 * index));
         }
     };
     //点击右边按钮
@@ -37,7 +37,7 @@ window.onload = function () {
             if(index > slideLength-1){
                 return;
             }
-            play(-(1299 * index),index,index -1);
+            play(-(1299 * index));
         }
     };
 
@@ -48,26 +48,28 @@ function autoPlay(period) {
     timer = setInterval(function () {
         index++;
         if (index == slideLength - 1) {
+            index = 0;
             clearInterval(timer);
             criticality();
             return autoPlay(period);
         } else {
             if(index > slideLength-1){
-                return;
+                // return;
+                index = 0;
             }
-            play(-(1299 * index),index,index -1);
+            play(-(1299 * index));
         }
     }, period)
 }
 //轮播公共方法
-function play(left,activeIndex,emptyIndex) {
+function play(left) {
     //1、图片移动left px；
     slide.style.left = left + 'px';
     slide.style.transition = 'left 1.5s';
 }
 function criticality() {
-    play(-(1299 * index),0,slideLength - 2);
-    var now=(new Date()).getTime()+1500;
+    play(-(1299 * index));
+    var now=(new Date()).getTime()+2000;
     if((new Date()).getTime()<=now){
         rightBtn.disabled=true;
         setTimeout(function () {
@@ -78,5 +80,5 @@ function criticality() {
         slide.style.left = 0 + 'px';
         slide.style.transition = 'left 0s';
         index = 0;
-    }, 1500);
+    }, 2000);
 }
