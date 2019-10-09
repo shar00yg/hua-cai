@@ -98,6 +98,8 @@ td {
 
 /* nav */
 .header .nav{
+    position: relative;
+    top: -35px;
     width: 1299px;
     margin: 0 auto;
 }
@@ -133,6 +135,7 @@ td {
     background-color: rgb(241, 145, 73);
 }
 
+
 .header .nav .nav_first > li .nav_second {
     position: absolute;
     top: 35px;
@@ -160,12 +163,13 @@ td {
 .header .nav .nav_first > li .nav_second > li a:hover{
     background-color: rgb(193, 126, 76);
 }
-/* .header .nav .nav_first > li .nav_second > li a:hover .nav_first > li{
-    background-color: rgb(241, 145, 73);
-} */
+
 
 .header .nav .nav_first::after {
     display: block;
     content: '';
     clear: both;
 }
+
+
+/* .slideshow */
