@@ -114,6 +114,8 @@ td {
     line-height: 35px;
     text-align: center;
     background-color: #003c72;
+    font-size: 19px;
+    color: #fff;
 }
 
 .header .nav .nav_first > li a {
@@ -127,7 +129,8 @@ td {
 }
 
 .header .nav .nav_first > li a:hover {
-    font-weight: bold;
+    /* font-weight: bold; */
+    background-color: rgb(241, 145, 73);
 }
 
 .header .nav .nav_first > li .nav_second {
@@ -138,20 +141,28 @@ td {
 }
 
 .header .nav .nav_first > li .nav_second > li {
-    width: 121px;
+    width: 144.33px;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background-color: #003c72;
+    background-color: rgb(241, 145, 73);
+
 }
 
-.header .nav .nav_first > li:hover {
+/* .header .nav .nav_first > li:hover {
     font-weight: bold;
-}
+
+} */
 
 .header .nav .nav_first > li:hover .nav_second {
     display: block;
 }
+.header .nav .nav_first > li .nav_second > li a:hover{
+    background-color: rgb(193, 126, 76);
+}
+/* .header .nav .nav_first > li .nav_second > li a:hover .nav_first > li{
+    background-color: rgb(241, 145, 73);
+} */
 
 .header .nav .nav_first::after {
     display: block;
