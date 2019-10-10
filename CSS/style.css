@@ -274,3 +274,34 @@ button{
     border: 1px solid pink;
 
 }
+
+
+.coggle_news{
+        width: 518px;
+        height: 407px;
+}
+.proclamation{
+    width: 518px;
+	height: 319px;
+}
+.student_corner{
+    width: 518px;
+    height: 156px;
+    display: flex;
+
+}
+.student_corner > img{
+    flex: 1;
+}
+.highlights{
+    width: 779px;
+	height: 457px;
+}
+.platform{
+    width: 779px;
+	height: 214px;
+}
+.four_pics{
+    height: 308px;
+    width: 779px;
+}
