@@ -2,7 +2,6 @@ body {
     font-family: "Microsoft YaHei", serif;
     word-break: break-word;
     min-width: 1210px;
-    background-color: rgb(255,250,240);
 }
 
 body,
@@ -172,6 +171,12 @@ td {
     clear: both;
 }
 
+.middle{
+    width: 100%;
+    height: 1336px;
+    background-image: url(../Images/middle_back.png);
+
+}
 
 /* .slideshow */
 .slide {
@@ -230,7 +235,6 @@ li:hover {
     position: relative;
     margin: 0 auto;
     height: 376px;
-    /* background-image: url(/Images/slide_back.png); */
 }
 button{
     border: none;
@@ -286,13 +290,23 @@ button{
 }
 .student_corner{
     width: 518px;
-    height: 156px;
-    display: flex;
+    height: 250px;
+    /* display: flex; */
 
 }
-.student_corner > img{
-    flex: 1;
+.student_corner .three_pics{
+    display: flex;
+    margin-top: 20px;
 }
+.student_corner .three_pics> img{
+    flex: 1;
+    margin-top: 30px;
+    height: 156px;
+    margin: 0 1px;
+    /* width: 170px; */
+    height: 124px;
+}
+
 .highlights{
     width: 779px;
 	height: 457px;
@@ -304,4 +318,78 @@ button{
 .four_pics{
     height: 308px;
     width: 779px;
+}
+
+
+
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 318px;
+    background-image: url(../Images/footer_back.png);
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer_content{
+    display: flex;
+    width: 1299px;
+    margin: 0 auto;
+}
+.footer .footer_content .friend_link{
+    /* left: 0; */
+    flex: 1;
+    margin:0 40px  0  110px ;
+}
+.footer .footer_content .friend_link >p{
+    font-size: 20px;  
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer .footer_content .friend_link .link{
+    /* border: 1px solid pink; */
+    width: 210px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.footer .footer_content .friend_link .link > img{
+    flex: 1;
+    height: 8px;
+    line-height: 8px;
+    margin-right:6px;
+}
+.footer .footer_content .friend_link .link > p{
+    flex: 11;
+    margin-left: 6px;
+    font-size: 14px;
+}
+
+
+.footer .footer_content .call_us{
+    /* right: 0; */
+    flex: 1;
+    margin: 0 220px  0 0;
+    color: #fff;
+    font-size: 16px;
+}
+.footer .footer_content .call_us>p{
+    margin-bottom: 20px;
+}
+.footer .footer_content .call_us .call_us_top{
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.footer .footer_content .call_us .call_us_top .footer_wechat{
+    flex: 1;
+}
+.footer .footer_content .call_us .call_us_top >p{
+    flex: 3;
 }
