@@ -8,7 +8,7 @@ var slideLength = slide.children.length;//轮播图个数
 var timer = null;//定时器初始为null
 var index = 0;//计数
 window.onload = function () {
-    var everyTime = 2000;//轮播的间隔时间
+    var everyTime = 3000;//轮播的间隔时间
     autoPlay(everyTime);//页面打开后自动开启播放
     //当有鼠标划过时停止定时器
     contain.onmouseenter = function () {
@@ -16,6 +16,7 @@ window.onload = function () {
     };
     //鼠标摞开时启动定时器
     contain.onmouseleave = function () {
+        clearInterval(timer);
         autoPlay(everyTime);
     };
     //点击左边按钮
@@ -59,6 +60,7 @@ window.onload = function () {
 //自动播放
 function autoPlay(period) {
     timer = setInterval(function () {
+        console.log(new Date() )
         index++;
         if (index == slideLength - 1) {
             clearInterval(timer);

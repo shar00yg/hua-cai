@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="GB2312">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./script/add.js"></script>
+  <link rel="stylesheet" href="./style/base.css">
+  <link rel="stylesheet" href="./style/display.css">
+  <script src="./script/init.js"></script>
+  <title>[文章标题]</title>
+</head>
+
+<body>
+  <div id="header-bg"></div>
+  <div id="main-bg"></div>
+  <div id="footer-bg"></div>
+  <div id="content">
+    <div id="header">
+      <div id="header-top">
+        <div id="header-top-right">专家您好，感谢您对中南民族大学教学成果的关注！</div>
+        <div id="header-top-left">
+          <div class="header-top-left-item">
+            <a href="javascript:" onclick="setHome(this, window.location)">设为主页</a>
+          </div>
+          <div class="header-top-left-item">
+            <a href="javascript:" onclick="addF(document.title, window.location)">加入收藏</a>
+          </div>
+          <div class="header-top-left-item">
+            <a href="http://www.scuec.edu.cn/">民大主页</a>
+          </div>
+        </div>
+      </div>
+      <div id="header-icon">
+        <div id="header-icon-img"></div>
+        <div id="header-icon-content">
+          <p>2018国家级教学成果奖申报</p>
+          <p>民族高校化学类专业人才培养模式的改革与实践</p>
+        </div>
+      </div>
+      <div id="header-nav">
+        <table>
+          <tr>
+            <td>[频道6]</td>
+          </tr>
+        </table>
+        <!-- <ul>
+          <li class="header-nav-item">
+            <a href="#">nav1</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">nav2</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">nav3</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">nav4</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">nav5</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">nav6</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">nav7</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">nav8</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">nav9</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">nav1</a>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+    <div id="main-content clear">
+
+      <div class="con clear">
+
+        <div class="list_box clear">
+          <div class="list_left">
+            <div class="list_head">[文章标题]</div>
+          </div>
+          <div class="list_right">
+            <div class="current">
+              <div class="list-name">[文章标题]</div>
+              <table class="pos">
+                <tr>
+                  <td>
+                    <div class="icon"></div>
+                  </td>
+                  <td>[当前位置]</td>
+
+                </tr>
+              </table>
+              <script>
+                var icon = document.getElementsByClassName('icon')[0];
+                icon.innerHTML = '当前位置 ：'
+              </script>
+              <script>
+                var posSplit = document.getElementsByClassName('posSplit')
+                console.log(posSplit)
+
+                for (var i = 0, len = posSplit.length; i < len; i++) {
+                  posSplit[i].innerHTML = '>'
+                }
+              </script>
+            </div>
+            <div class="article list_content">
+              <table>
+                <tr>
+                  <td valign="top" class="article_content">[文章内容]</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div id="footer-icon"></div>
+      <div id="footer-content">
+        <p>版权所有&copy2018 中南民族大学 鄂ICP备05003346号</p>
+        <p>武汉市洪山区民族大道182号 邮编430074</p>
+        <p>技术支持： 新思路团队</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
