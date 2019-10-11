@@ -1,7 +1,7 @@
 body {
     font-family: "Microsoft YaHei", serif;
     word-break: break-word;
-    min-width: 1210px;
+    min-width: 1300px;
 }
 
 body,
@@ -154,10 +154,6 @@ td {
 
 }
 
-/* .header .nav .nav_first > li:hover {
-    font-weight: bold;
-
-} */
 
 .header .nav .nav_first > li:hover .nav_second {
     display: block;
@@ -175,7 +171,7 @@ td {
 
 .middle{
     width: 100%;
-    height: 1336px;
+    height: 1416px;
     background-image: url(../Images/middle_back.png);
 
 }
@@ -265,7 +261,7 @@ button{
 /* showBoard 部分 */
 .showBoard{
     position: relative;
-    top: 35px;
+    top: 70px;
     width: 1299px;
     
     margin: 0 auto;
@@ -278,6 +274,7 @@ button{
 .rightBoard{
     flex: 6;
     /* border: 1px solid pink; */
+    margin-left: 36px;
 
 }
 
@@ -311,7 +308,7 @@ button{
 
 .highlights{
     width: 779px;
-	height: 457px;
+    height: 457px;
 }
 .platform{
     width: 779px;
