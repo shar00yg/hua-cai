@@ -1,6 +1,9 @@
-body {
-  width: 100%;
+.middle .rightBoard .four_pics .pics_left {
+  margin-right: 20px;
 }
-body h2 {
-  height: 200px;
+.middle .rightBoard .four_pics .pics_left :first-child {
+  margin-bottom: 20px;
+}
+.middle .rightBoard .four_pics .pics_right :first-child {
+  margin-bottom: 20px;
 }

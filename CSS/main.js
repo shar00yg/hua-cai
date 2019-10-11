@@ -2,13 +2,11 @@ var contain = document.querySelector('.contain');//获取需要改变left的元�
 var slide = document.querySelector('.slide');//获取需要改变left的元素
 var leftBtn = document.querySelector('.left');//获取左边按钮
 var rightBtn = document.querySelector('.right');//获取右边按钮
-// var indicator = document.querySelector('.indicator');//指示灯父元素
-// var indicatorChild = indicator.children;//指示灯的个数
 var slideLength = slide.children.length;//轮播图个数
 var timer = null;//定时器初始为null
 var index = 0;//计数
 window.onload = function () {
-    var everyTime = 3000;//轮播的间隔时间
+    var everyTime = 4000;//轮播的间隔时间
     autoPlay(everyTime);//页面打开后自动开启播放
     //当有鼠标划过时停止定时器
     contain.onmouseenter = function () {
@@ -41,20 +39,6 @@ window.onload = function () {
             play(-(1299 * index),index,index -1);
         }
     };
-    //指示灯点击时
-    // for (let i = 0; i < indicatorChild.length; i++) {
-    //     indicatorChild[i].onmouseenter = function () {
-    //         //先将同级class移除；
-    //         for (var j = 0; j < indicatorChild.length; j++) {
-    //             if (indicatorChild[j].className == 'li-active') {
-    //                 indicatorChild[j].className = '';
-    //             }
-    //         }
-    //         //设置所点击的元素class,并移动到指示灯所在图片
-    //         play(-(1299 * i),i,undefined);
-    //         index = i;
-    //     }
-    // }
 
 };
 //自动播放
@@ -79,11 +63,6 @@ function play(left,activeIndex,emptyIndex) {
     //1、图片移动left px；
     slide.style.left = left + 'px';
     slide.style.transition = 'left 1.5s';
-    //2、改变指示灯颜色
-    // indicatorChild[activeIndex].className = 'li-active';
-    // if(emptyIndex!=undefined){
-    //     indicatorChild[emptyIndex].className = '';
-    // }
 }
 function criticality() {
     play(-(1299 * index),0,slideLength - 2);
@@ -100,3 +79,39 @@ function criticality() {
         index = 0;
     }, 1500);
 }
+
+// 学院新闻
+(function () {
+    var pTag = document.querySelectorAll('.middle .leftBoard .coggle_news .coggle_news_content >li > tbody > tr > td > p');
+    var divTag = document.querySelectorAll('.middle .getPro .table-showBoard .leftBoard .coggle_news .coggle_news_content >li');
+    var tdTag = document.querySelectorAll('.middle .getPro .table-showBoard .leftBoard .coggle_news .coggle_news_content td[align="right"]');
+    var news = document.querySelector('.first_content .car-new-lists');
+    var len = divTag.length;
+    var pHtml = [];
+    var html = ''
+    for (var i= 0; i < len; i++) {
+      var item = pTag[i].children[0].innerHTML;
+      pHtml.push(item);
+    }
+    for (var j = 0; j < len; j++) {
+      var divHtml = divTag[j].innerHTML;
+      var year = divHtml.substring(0,4);
+      var monthDay = divHtml.substring(5,10);
+      var tdHtml = tdTag[j].children[0].innerHTML;
+      var aHref = tdTag[j].children[0].getAttribute('href');
+      html +=
+        '<li>' +
+          '<a href="'+ aHref+'">' +
+            '<div class="left-time">' +
+              '<span class="time-m-d">'+ monthDay +'</span>' +
+              '<span class="time-year">'+ year +'</span>' +
+            '</div>' +
+            '<div class="right-news">' +
+              '<h6>'+ tdHtml +'</h6>' +
+              '<p>'+ pHtml[j] +'</p>' +
+            '</div>' +
+          '</a>' +
+        '</li>';
+    }
+    news.innerHTML = html;
+  })();
