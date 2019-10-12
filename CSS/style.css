@@ -113,7 +113,7 @@ td {
 .header .nav .nav_first > li {
     position: relative;
     float: left;
-    width: 144.33px;
+    width: 162.33px;
     height: 35px;
     line-height: 35px;
     text-align: center;
@@ -146,7 +146,7 @@ td {
 }
 
 .header .nav .nav_first > li .nav_second > li {
-    width: 144.33px;
+    width: 162.33px;
     height: 35px;
     line-height: 35px;
     text-align: center;
@@ -452,3 +452,142 @@ button{
     -webkit-box-orient: vertical;
   }
   
+
+  /*list_page*/
+.list_box_papa{
+    width: 100%;
+    background-image: url(../Images/middle_back.png);
+    min-height: 670px;
+}
+.list_box {
+    width: 1299px;
+    min-height: 670px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fcfcfc;
+}
+
+.list_left {
+    float: left;
+    background-color: #fcfcfc;
+    width: 260px;
+}
+
+.list_left .list_head {
+    width: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.list_right .list_head {
+    width: 100%;
+}
+
+.list_head {
+    padding: 10px;
+    background: #005caf;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.list_right_head {
+    border-bottom: 1px solid #ddd;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.list_right_head a {
+    font-weight: normal;
+    color: #7d7d7d;
+}
+
+.list_right_head td {
+    font-weight: normal;
+}
+
+.list_menu table {
+    width: 100%;
+
+}
+
+.list_menu a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #7d7d7d;
+    padding-left: 20px;
+    transition: all ease 0.2s;
+}
+
+.list_menu a:hover {
+    background: #eee;
+    color: #006dd4;
+    padding-left: 25px;
+}
+
+.list_right {
+    float: left;
+    background-color: #fcfcfc;
+    padding: 1px;
+    width: 942px;
+    min-height:498px;
+    border-left: 1px solid #005caf;
+}
+
+.list_right .list_head a {
+    font-size: 13px;
+    color: #fff;
+}
+
+.list_right table {
+    width: 100%;
+}
+
+.list_right img {
+    display: inline-block;
+    max-width: 600px;
+}
+
+.article {
+    padding: 10px;
+    margin-bottom: 15px;
+    min-height: 461px;
+}
+
+.article .article_meta img {
+    display: inline-block;
+}
+.list_content{
+    padding:10px;
+}
+.list_content > table{
+    width:100%;
+}
+.list_content > table > tbody > tr > td{
+    color:rgb(51,51,51);
+    font-size:16px;
+    font-family:"Microsoft YaHei";
+}
+.list_content a {
+    padding-left: 10px;
+    line-height: 30px;
+    height: 30px;
+    color: #4d4d4d;
+}
+
+.list_content a:hover {
+    text-decoration: underline;
+}
+
+.list_menu {
+    min-height: 456px;
+}
+
+.list_menu a {
+    text-decoration: none;
+}

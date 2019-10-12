@@ -1,150 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="GB2312">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="./script/add.js"></script>
-  <link rel="stylesheet" href="./style/base.css">
-  <link rel="stylesheet" href="./style/display.css">
-  <script src="./script/init.js"></script>
-  <title>科学成果</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<title>化学与材料学学院</title>
+	<!--[if lt IE 9]>
+	<style type="text/css">
+
+	</style>
+	<script type="text/javascript">
+
+	</script>
+	<![endif]-->
+	<!--[if lt IE 8]>
+	<style type="text/css">
+
+	</style>
+	<![endif]-->
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
 </head>
-
 <body>
-  <div id="header-bg"></div>
-  <div id="main-bg"></div>
-  <div id="footer-bg"></div>
-  <div id="content">
-    <div id="header">
-      <div id="header-top">
-        <div id="header-top-right">专家您好，感谢您对中南民族大学教学成果的关注！</div>
-        <div id="header-top-left">
-          <div class="header-top-left-item">
-            <a href="javascript:" onclick="setHome(this, window.location)">设为主页</a>
-          </div>
-          <div class="header-top-left-item">
-            <a href="javascript:" onclick="addF(document.title, window.location)">加入收藏</a>
-          </div>
-          <div class="header-top-left-item">
-            <a href="http://www.scuec.edu.cn/">民大主页</a>
-          </div>
-        </div>
-      </div>
-      <div id="header-icon">
-        <div id="header-icon-img"></div>
-        <div id="header-icon-content">
-          <p>2018国家级教学成果奖申报</p>
-          <p>民族高校化学类专业人才培养模式的改革与实践</p>
-        </div>
-      </div>
-      <div id="header-nav">
-        <table>
-          <tr>
-            <td>[频道6]</td>
-          </tr>
-        </table>
-        <!-- <ul>
-          <li class="header-nav-item">
-            <a href="#">nav1</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#">nav2</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#">nav3</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#">nav4</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#">nav5</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#">nav6</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#">nav7</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#">nav8</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#">nav9</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#">nav1</a>
-          </li>
-        </ul> -->
-      </div>
-    </div>
-    <div id="main-content clear">
+  <!-- header 部分 -->
+  <div class="header">
 
-      <div class="con">
-        <div class="list_box clear">
-          <div class="list_left">
-            <div class="list_head">[位置名称]</div>
-            <div class="list_menu">
-              <table>
-                <tr>
-                  <td>[栏目列表]</td>
-                </tr>
-              </table>
-            </div>
+      <div class="header_base">
+          <!-- <a class="topper_content" href="">ENGLISH</a> -->
+          <div class="logo">
+                  <a class="topper_content" href="">ENGLISH</a>
+              <img src="./Images/logo2.png" >
           </div>
-          <div class="list_right">
-            <div class="current">
-              <div class="list-name">[位置名称]</div>
-              <table class="pos">
-                <tr>
-                  <td>
-                    <div class="icon"></div>
-                  </td>
-                  <td>[当前位置]</td>
-                </tr>
-              </table>
-              <script>
-                var icon = document.getElementsByClassName('icon')[0];
-                icon.innerHTML = '当前位置 ：'
-              </script>
-              <script>
-                var posSplit = document.getElementsByClassName('posSplit')
-                console.log(posSplit)
+      </div>
+          <!-- nav 部分 -->
+        <div class="nav">
+          <ul class="nav_first">
+              <li><a href="">学院首页</a></li>
+              <li>
+                  <a href="">学院概况</a>
+                  <ul class="nav_second">
+                      <li><a href="">学院简介</a></li>
+                      <li><a href="">组织机构</a></li>
+                      <li><a href="">现任领导 </a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="">师资队伍</a>
+                  <ul class="nav_second">
+                      <li><a href="">师资力量</a></li>
+                      <li><a href="">课题组</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="">学生工作</a>
+                  <ul class="nav_second">
+                      <li><a href="">校友之窗</a></li>
+                      <li><a href="">学生组织</a></li>
+                      <li><a href="">学生社团 </a></li>
+                      <li><a href="">考研就业 </a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="">人才培养</a>
+                  <ul class="nav_second">
+                      <li><a href="">本科生</a></li>
+                      <li><a href="">研究生</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="">科学研究</a>
+                  <ul class="nav_second">
+                      <li><a href="">整体概况</a></li>
+                      <li><a href="">科研项目</a></li>
+                      <li><a href="">承担课题 </a></li>
+                      <li><a href="">学术论文 </a></li>
+                      <li><a href="">获奖成果 </a></li>
 
-                for (var i = 0, len = posSplit.length; i < len; i++) {
-                  posSplit[i].innerHTML = '>'
-                }
-              </script>
-            </div>
-            <div class="list_content clear">
-              <table>
-                <tr>
-                  <!-- <td>
-                    <p class="list_dot"></p>
-                  </td>
-                  <td>
-                    <div class="icon"></div>
-                  </td> -->
-                  <td>[文章列表]</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
+                  </ul>
+              </li>
+              <li>
+                  <a href="">党建思政</a>
+                  <ul class="nav_second">
+                      <li><a href="">党建之窗</a></li>
+                      <li><a href="">党建公开</a></li>
+                  </ul>
+              </li>
+              <!-- <li>
+                  <a href="">校友之窗</a>
+                  <ul class="nav_second">
+                      <li><a href="">学院简介</a></li>
+                      <li><a href="">组织机构</a></li>
+                      <li><a href="">现任领导 </a></li>
+                  </ul>
+              </li> -->
+              <li>
+                  <a href="">安全稳定</a>
+                  <ul class="nav_second">
+                      <li><a href="">学院简介</a></li>
+                      <li><a href="">组织机构</a></li>
+                      <li><a href="">现任领导 </a></li>
+                  </ul>
+              </li>
+
+              
+          </ul>
       </div>
-    </div>
-    <div id="footer">
-      <div id="footer-icon"></div>
-      <div id="footer-content">
-        <p>版权所有&copy2018 中南民族大学 鄂ICP备05003346号</p>
-        <p>武汉市洪山区民族大道182号 邮编430074</p>
-        <p>技术支持： 新思路团队</p>
-      </div>
-    </div>
-  </div>
+      
   </div>
 
+  <div class="list_box_papa">
+    <div class="list_box">
+        <div class="list_left">
+          <div class="list_head">[位置名称]</div>
+          <div class="list_menu">
+            <table>
+              <tr>
+                <td>[栏目列表]</td>
+              </tr>
+              <tr>
+                <td>
+                  <table>
+                    <tr>
+                      <td width="30" height="29" align="left" valign="middle" >&nbsp;</td>
+                      <td>[二级栏目]</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="list_right">
+          <div class="list_right_head">
+            <table>
+              <tr>
+                <td>当前位置：[当前位置]</td>
+              </tr>
+            </table>
+          </div>
+          <div class="list_content">
+            <table>
+              <tr>
+                <td>
+                  <p class="list_dot"></p>
+                </td>
+                <td>[文章列表]</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- footer 部分 -->
+  <div class="footer">
+      <div class="footer_content">
+          <div class="friend_link">
+              <p>常用链接:</p>
+              <div class="link1 link">
+                  <p>校内链接</p>
+                  <img src="Images/triangle.png" alt="">
+              </div>
+              <div class="link2 link">
+                  <p>校外链接</p>
+                  <img src="Images/triangle.png" alt="">
+              </div>
+
+              <!-- <span class="row_line"></!--> 
+              <!-- <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                      <td>[频道11]</td>
+                  </tr>
+              </table> -->
+          </div>
+
+          <div class="call_us">
+              <div class="call_us_top">
+                  <p>联系我们:</p>
+                  <span class="footer_wechat">
+                      <img src="./Images/wechat1.png" alt="">
+                  </span>
+              </div>
+              <p>地址：武汉市洪山区民院路708号</p>
+              <p>邮编： 430074</p>
+          </div>
+
+          <!-- <div class="special" style="display: none;">
+              <table>
+                  <tr>
+                      <td>[频道21]</td>
+                  </tr>
+              </table>
+              <table>
+                  <tr>
+                      <td>[频道22]</td>
+                  </tr>
+              </table>
+          </div> -->
+
+      </div>
+
+  </div>
 </body>
-
 </html>
