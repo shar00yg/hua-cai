@@ -44,7 +44,7 @@ window.onload = function () {
 //自动播放
 function autoPlay(period) {
     timer = setInterval(function () {
-        console.log(new Date() )
+        // console.log(new Date() )
         index++;
         if (index == slideLength - 1) {
             clearInterval(timer);
@@ -82,36 +82,77 @@ function criticality() {
 
 // 学院新闻
 (function () {
-    var pTag = document.querySelectorAll('.middle .leftBoard .coggle_news .coggle_news_content >li > tbody > tr > td > p');
-    var divTag = document.querySelectorAll('.middle .getPro .table-showBoard .leftBoard .coggle_news .coggle_news_content >li');
-    var tdTag = document.querySelectorAll('.middle .getPro .table-showBoard .leftBoard .coggle_news .coggle_news_content td[align="right"]');
-    var news = document.querySelector('.first_content .car-new-lists');
-    var len = divTag.length;
-    var pHtml = [];
-    var html = ''
-    for (var i= 0; i < len; i++) {
-      var item = pTag[i].children[0].innerHTML;
-      pHtml.push(item);
+    var link0 = '.middle .leftBoard .coggle_news .coggle_news_content >li';
+    var trsTag = document.querySelectorAll(link0+'>table > tbody >tr'); //table list
+    var tablesLength = trsTag.length;
+    var halfLength = (tablesLength + 1)/2;
+    var timesList = [];  //时间
+    for (var i= 0; i < halfLength; i++) {
+        var item = trsTag[i].innerText;
+        timesList.push(item);
     }
-    for (var j = 0; j < len; j++) {
-      var divHtml = divTag[j].innerHTML;
-      var year = divHtml.substring(0,4);
-      var monthDay = divHtml.substring(5,10);
-      var tdHtml = tdTag[j].children[0].innerHTML;
-      var aHref = tdTag[j].children[0].getAttribute('href');
-      html +=
-        '<li>' +
-          '<a href="'+ aHref+'">' +
-            '<div class="left-time">' +
-              '<span class="time-m-d">'+ monthDay +'</span>' +
-              '<span class="time-year">'+ year +'</span>' +
-            '</div>' +
-            '<div class="right-news">' +
-              '<h6>'+ tdHtml +'</h6>' +
-              '<p>'+ pHtml[j] +'</p>' +
-            '</div>' +
-          '</a>' +
-        '</li>';
+    var aHrefList =[];  //连接
+    var titleList =[];  //文章标题
+    //文章简介
+    for(var j = halfLength-1 ;j< tablesLength;j++ ){
+        var item1 = trsTag[j].baseURI;
+        var item2 = trsTag[j].textContent;
+        aHrefList.push(item1);
+        titleList.push(item2);
+    }
+    var html = '';
+    var news = document.querySelector('.coggle_news .coggle_news_content');
+    for(l=0;l<tablesLength){
+        // var divHtml = divTag[j].innerHTML;
+        var year = timesList[l].substring(0,4);
+        var monthDay = timesList[l].substring(5,10);
+
+    html +=
+    '<li>' +
+      '<a href="'+ aHrefList[l]+'">' +
+        '<div class="left-time">' +
+          '<span class="time-m-d">'+ monthDay +'</span>' +
+          '<span class="time-year">'+ year +'</span>' +
+        '</div>' +
+        '<div class="right-news">' +
+          '<h6>'+ titleList[l] +'</h6>' +
+          '<p>'+ titleList[l] +'</p>' +
+        '</div>' +
+      '</a>' +
+    '</li>';
     }
     news.innerHTML = html;
-  })();
+
+})();
+
+//     var divTag = document.querySelectorAll('.middle .leftBoard .coggle_news .coggle_news_content >li');
+//     var tdTag = document.querySelectorAll('.middle .getPro .table-showBoard .leftBoard .coggle_news .coggle_news_content td[align="right"]');
+//     var news = document.querySelector('.first_content .car-new-lists');
+//     var len = divTag.length;
+//     var pHtml = [];
+//     for (var i= 0; i < len; i++) {
+//       var item = lisTag[i].children[0].innerHTML;
+//       pHtml.push(item);
+//     }
+//     for (var j = 0; j < len; j++) {
+//       var divHtml = divTag[j].innerHTML;
+//       var year = divHtml.substring(0,4);
+//       var monthDay = divHtml.substring(5,10);
+//       var tdHtml = tdTag[j].children[0].innerHTML;
+//       var aHref = tdTag[j].children[0].getAttribute('href');
+//       html +=
+//         '<li>' +
+//           '<a href="'+ aHref+'">' +
+//             '<div class="left-time">' +
+//               '<span class="time-m-d">'+ monthDay +'</span>' +
+//               '<span class="time-year">'+ year +'</span>' +
+//             '</div>' +
+//             '<div class="right-news">' +
+//               '<h6>'+ tdHtml +'</h6>' +
+//               '<p>'+ pHtml[j] +'</p>' +
+//             '</div>' +
+//           '</a>' +
+//         '</li>';
+//     }
+//     news.innerHTML = html;
+//   })();
