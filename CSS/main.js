@@ -82,21 +82,22 @@ function criticality() {
 
 // 学院新闻
 (function () {
-    var link0 = '.middle .leftBoard .coggle_news .coggle_news_content >li';
-    var trsTag = document.querySelectorAll(link0+'>table > tbody >tr'); //table list
+    var link0 = '.middle .leftBoard .coggle_news .coggle_news_content >li>table > tbody >tr>td>table>tbody>tr>td';
+    var trsTag = document.querySelectorAll(link0); //table list
     var tablesLength = trsTag.length;
     var halfLength = (tablesLength + 1)/2;
     var timesList = [];  //时间
     for (var i= 0; i < halfLength; i++) {
-        var item = trsTag[i].innerText;
+        var item = trsTag[i].children[0].innerText;
         timesList.push(item);
     }
     var aHrefList =[];  //连接
     var titleList =[];  //文章标题
-    //文章简介
+    var articleList = [];//文章简介
     for(var j = halfLength-1 ;j< tablesLength;j++ ){
-        var item1 = trsTag[j].baseURI;
-        var item2 = trsTag[j].textContent;
+        var item1 = trsTag[j].children[0].href;
+        var item2 = trsTag[j].children[0].title;
+        var item3 = trsTag[j].children[0].innerText;
         aHrefList.push(item1);
         titleList.push(item2);
     }
