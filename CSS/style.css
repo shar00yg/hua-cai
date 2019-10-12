@@ -409,6 +409,7 @@ button{
 .middle .showBoard .leftBoard .coggle_news .coggle_news_content li {
     width: 515px;
     height: 46px;
+    margin: 14px 0;
   }
   .middle .showBoard .leftBoard .coggle_news .coggle_news_content li a {
     display: flex;
@@ -424,6 +425,8 @@ button{
     line-height: 23px;
     color: #0e6eca;
     font-size: 14px;
+    display: block;
+    text-align: center;
   }
   .middle .showBoard .leftBoard .coggle_news .coggle_news_content li a .left-time .time-year {
     background-color: #00479d;
@@ -431,13 +434,17 @@ button{
     line-height: 23px;
     color: #fff;
     font-size: 12px;
+    display: block;
+    text-align: center;
   }
   .middle .showBoard .leftBoard .coggle_news .coggle_news_content li a .right-news {
     flex: 8;
-    border-bottom: 1px dotted #bfbfbf;
+    border-bottom: 1px dashed #bfbfbf;
+    margin-left: 12px;
   }
   .middle .showBoard .leftBoard .coggle_news .coggle_news_content li a .right-news h6 {
     font-size: 16px;
+    font-weight: normal;
     height: 17px;
     line-height: 17px;
   }
@@ -445,6 +452,7 @@ button{
     height: 12px;
     font-size: 11px;
     line-height: 12px;
+    color: rgb(111, 111, 111);
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
