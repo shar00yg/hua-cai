@@ -404,3 +404,51 @@ button{
 .footer .footer_content .call_us .call_us_top >p{
     flex: 3;
 }
+
+/* 学院新闻 内容条 */
+.middle .showBoard .leftBoard .coggle_news .coggle_news_content li {
+    width: 515px;
+    height: 46px;
+  }
+  .middle .showBoard .leftBoard .coggle_news .coggle_news_content li a {
+    display: flex;
+  }
+  .middle .showBoard .leftBoard .coggle_news .coggle_news_content li a .left-time {
+    border: 1px solid #00479d;
+    flex: 1;
+    width: 54px;
+    height: 46px;
+  }
+  .middle .showBoard .leftBoard .coggle_news .coggle_news_content li a .left-time .time-m-d {
+    height: 23px;
+    line-height: 23px;
+    color: #0e6eca;
+    font-size: 14px;
+  }
+  .middle .showBoard .leftBoard .coggle_news .coggle_news_content li a .left-time .time-year {
+    background-color: #00479d;
+    height: 23px;
+    line-height: 23px;
+    color: #fff;
+    font-size: 12px;
+  }
+  .middle .showBoard .leftBoard .coggle_news .coggle_news_content li a .right-news {
+    flex: 8;
+    border-bottom: 1px dotted #bfbfbf;
+  }
+  .middle .showBoard .leftBoard .coggle_news .coggle_news_content li a .right-news h6 {
+    font-size: 16px;
+    height: 17px;
+    line-height: 17px;
+  }
+  .middle .showBoard .leftBoard .coggle_news .coggle_news_content li a .right-news p {
+    height: 12px;
+    font-size: 11px;
+    line-height: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  
