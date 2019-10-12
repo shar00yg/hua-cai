@@ -102,7 +102,7 @@ function criticality() {
     }
     var html = '';
     var news = document.querySelector('.coggle_news .coggle_news_content');
-    for(l=0;l<tablesLength){
+    for(l=0;l<tablesLength;l++){
         // var divHtml = divTag[j].innerHTML;
         var year = timesList[l].substring(0,4);
         var monthDay = timesList[l].substring(5,10);
