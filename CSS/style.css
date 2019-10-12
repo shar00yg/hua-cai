@@ -591,3 +591,36 @@ button{
 .list_menu a {
     text-decoration: none;
 }
+
+/*displayinfo*/
+.article .article_title {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.article .article_content {
+    width: 90%;
+    margin: auto;
+    font-size: 16px !important;
+}
+
+.article .article_content p {
+    min-height: 10px;
+    line-height: 2em !important;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.article .article_content strong img {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.article .article_content img {
+    max-width: 600px;
+}
