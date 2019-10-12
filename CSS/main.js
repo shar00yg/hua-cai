@@ -128,50 +128,49 @@ function criticality() {
     }
 })();
 
-// 通知公告
-(function () {
-    var link1 = '.middle .leftBoard .proclamation .proclamation_content >li>table > tbody >tr>td>table>tbody>tr>td';
-    var trsTag1 = document.querySelectorAll(link1); //table list
-    var tablesLength = trsTag1.length;
-    var halfLength = (tablesLength)/2;
-    var timesList = [];  //时间
-    for (var i= 0; i < halfLength; i++) {
-        var item = trsTag1[i].children[0].innerText;
-        timesList.push(item);
-    }
-    var aHrefList =[];  //连接
-    var titleList =[];  //文章标题
-    var articleList = [];//文章简介
-    for(var j = halfLength ;j< tablesLength;j++ ){
-        var item1 = trsTag1[j].children[0].href;
-        var item2 = trsTag1[j].children[0].title;
-        // var item3 = trsTag1[j].children[0].innerText;
-        aHrefList.push(item1);
-        titleList.push(item2);
-        // articleList.push(item3);
-    }
-    var html = '';
-    var news = document.querySelector('.proclamation .proclamation_content');
-    for(l=0;l<halfLength;l++){
-        var year = timesList[l].substring(0,4);
-        var monthDay = timesList[l].substring(5,10);
+// // 通知公告
+// (function () {
+//     var link1 = '.middle .leftBoard .proclamation .proclamation_content >li>table > tbody >tr>td>table>tbody>tr>td';
+//     var trsTag1 = document.querySelectorAll(link1); //table list
+//     var tablesLength = trsTag1.length;
+//     var halfLength = (tablesLength)/2;
+//     var timesList = [];  //时间
+//     for (var i= halfLength; i < tablesLength; i++) {
+//         var item = trsTag1[i].children[0].innerText;
+//         timesList.push(item);
+//     }
+//     var aHrefList =[];  //连接
+//     var titleList =[];  //文章标题
+//     // var articleList = [];//文章简介
+//     for(var j = 0 ;j< halfLength;j++ ){
+//         var item1 = trsTag1[j].children[0].href;
+//         var item2 = trsTag1[j].children[0].title;
+//         // var item3 = trsTag1[j].children[0].innerText;
+//         aHrefList.push(item1);
+//         titleList.push(item2);
+//         // articleList.push(item3);
+//     }
+//     var html1 = '';
+//     var news1 = document.querySelector('.proclamation .proclamation_content');
+//     for(l=0;l<halfLength;l++){
+//         var year = timesList[l].substring(0,4);
+//         var monthDay = timesList[l].substring(5,10);
 
-    html +=
-    '<li>' +
-      '::before'+
-      '<a href="'+ aHrefList[l]+'">' +
-      '<div class="left-news1">' +
-      //   '<h6>'+ titleList[l] +'</h6>' +
-        '<p>'+ titleList[l] +'</p>' +
-      '</div>' +
-        '<div class="right-time1">' +
-          '<span class="time-m-d1">'+ monthDay +'</span>' +
-          '<span class="time-year1">'+ year +'</span>' +
-        '</div>' +
-      '</a>' +
-    '</li>';
-    }
-    if(trsTag.length != 0 ){
-        news.innerHTML = html;
-    }
-})();
+//     html1 +=
+//     '<li>' +
+//       '::before'+
+//       '<a href="'+ aHrefList[l]+'">' +
+//       '<div class="left-news1">' +
+//       //   '<h6>'+ titleList[l] +'</h6>' +
+//         '<p>'+ titleList[l] +'</p>' +
+//       '</div>' +
+//         '<div class="right-time1">' +
+//           '<span class="time">'+ timesList[l] +'</span>' +
+//         '</div>' +
+//       '</a>' +
+//     '</li>';
+//     }
+//     if(trsTag1.length != 0 ){
+//         news1.innerHTML = html1;
+//     }
+// })();

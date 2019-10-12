@@ -460,7 +460,7 @@ button{
     -webkit-box-orient: vertical;
   }
 /* 通知公告 */
-.middle .showBoard .leftBoard .proclamation .proclamation_content li {
+/* .middle .showBoard .leftBoard .proclamation .proclamation_content li {
     display: flex;
 }
 .middle .showBoard .leftBoard .proclamation .proclamation_content li :before {
@@ -482,14 +482,56 @@ button{
     line-height: 19px;
     text-align: center;
 }
-.middle .showBoard .leftBoard .proclamation .proclamation_content li :before .right-time1 {
+.middle .showBoard .leftBoard .proclamation .proclamation_content li :before .right-time1 .time{
     flex: 1;
     font-size: 16px;
     font-family: 'STHeitiSC-Light';
     height: 19px;
     line-height: 19px;
     text-align: center;
-}
+} */
+.page_content .page_info > section .info_title .more .moreShow {
+    display: block;
+  }
+  .page_content .page_info > section .info_content > div {
+    display: none;
+  }
+  .page_content .page_info > section .info_content .moreShow {
+    display: block;
+  }
+  .page_content .page_info > section .info_content .moreShow > .table-first {
+    width: 100%;
+  }
+  .page_content .page_info > section .info_content .moreShow > .table-first > tbody > tr {
+    padding-left: 16px;
+    height: 34px;
+  }
+  .page_content .page_info > section .info_content .moreShow > .table-first > tbody > tr td[align="left"] a {
+    font-size: 14px;
+    color: #6a6a6a;
+  }
+  .page_content .page_info > section .info_content .moreShow > .table-first > tbody > tr td[align="left"] font {
+    color: #6a6a6a;
+    font-weight: normal;
+  }
+  .page_content .page_info > section .info_content .moreShow > .table-first > tbody > tr td[align="left"] b {
+    font-weight: normal;
+  }
+  .page_content .page_info > section .info_content .moreShow > .table-first > tbody > tr td[align="left"]::before {
+    position: relative;
+    display: inline-block;
+    margin: 0 8px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    border: 1px solid #5a92cd;
+  }
+  .page_content .page_info > section .info_content .moreShow > .table-first > tbody > tr td[align="right"] div {
+    color: #868686;
+    font-size: 12px;
+  }
+
   
   /*list_page*/
 .list_box_papa{
