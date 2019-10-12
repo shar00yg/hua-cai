@@ -85,7 +85,7 @@ function criticality() {
     var link0 = '.middle .leftBoard .coggle_news .coggle_news_content >li>table > tbody >tr>td>table>tbody>tr>td';
     var trsTag = document.querySelectorAll(link0); //table list
     var tablesLength = trsTag.length;
-    var halfLength = (tablesLength + 1)/2;
+    var halfLength = (tablesLength)/2;
     var timesList = [];  //时间
     for (var i= 0; i < halfLength; i++) {
         var item = trsTag[i].children[0].innerText;
@@ -100,6 +100,7 @@ function criticality() {
         var item3 = trsTag[j].children[0].innerText;
         aHrefList.push(item1);
         titleList.push(item2);
+        articleList.push(item3);
     }
     var html = '';
     var news = document.querySelector('.coggle_news .coggle_news_content');
@@ -117,7 +118,7 @@ function criticality() {
         '</div>' +
         '<div class="right-news">' +
           '<h6>'+ titleList[l] +'</h6>' +
-          '<p>'+ titleList[l] +'</p>' +
+          '<p>'+ articleList[l] +'</p>' +
         '</div>' +
       '</a>' +
     '</li>';
