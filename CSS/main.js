@@ -123,39 +123,8 @@ function criticality() {
       '</a>' +
     '</li>';
     }
-    if(trsTag.length 0!= ){
+    if(trsTag.length != 0 ){
         news.innerHTML = html;
     }
 })();
-
-//     var divTag = document.querySelectorAll('.middle .leftBoard .coggle_news .coggle_news_content >li');
-//     var tdTag = document.querySelectorAll('.middle .getPro .table-showBoard .leftBoard .coggle_news .coggle_news_content td[align="right"]');
-//     var news = document.querySelector('.first_content .car-new-lists');
-//     var len = divTag.length;
-//     var pHtml = [];
-//     for (var i= 0; i < len; i++) {
-//       var item = lisTag[i].children[0].innerHTML;
-//       pHtml.push(item);
-//     }
-//     for (var j = 0; j < len; j++) {
-//       var divHtml = divTag[j].innerHTML;
-//       var year = divHtml.substring(0,4);
-//       var monthDay = divHtml.substring(5,10);
-//       var tdHtml = tdTag[j].children[0].innerHTML;
-//       var aHref = tdTag[j].children[0].getAttribute('href');
-//       html +=
-//         '<li>' +
-//           '<a href="'+ aHref+'">' +
-//             '<div class="left-time">' +
-//               '<span class="time-m-d">'+ monthDay +'</span>' +
-//               '<span class="time-year">'+ year +'</span>' +
-//             '</div>' +
-//             '<div class="right-news">' +
-//               '<h6>'+ tdHtml +'</h6>' +
-//               '<p>'+ pHtml[j] +'</p>' +
-//             '</div>' +
-//           '</a>' +
-//         '</li>';
-//     }
-//     news.innerHTML = html;
-//   })();
+// 学院新闻 js 确定
