@@ -175,27 +175,19 @@ function criticality() {
 //     }
 // })();
 
-//隐藏more 提取link
+//隐藏more 提取link (通知通告，亮点论文)
 (function(){
     var noticeList = document.querySelector('.middle .leftBoard .proclamation .proclamation_content >li');
     var highlights_contentList = document.querySelector('.middle .showBoard .rightBoard .highlights .highlights_content > li');
-    if(noticeList.children[3] != undefined){
-        noticeList.children[3].style='display:none';
+    if(noticeList.children[1] != undefined){
         noticeList.children[1].style='display:none';   
-        highlights_contentList.children[3].style='display:none';
-        highlights_contentList.children[1].style='display:none';
-        highlights_contentList.children[5].style='display:none';
-        var moreLsit2 = noticeList.children[3].children[0].href;
+        highlights_contentList.children[2].style='display:none';
+        var moreLsit2 = noticeList.children[1].children[0].href;
         var imgLsit2 = document.querySelector("proclamation > a");
         imgLsit2.href = moreLsit2;
-        var highlightsLsit2 = noticeList.children[3].children[0].href;
+        var highlightsLsit2 = highlights_contentList.children[2].children[0].href;
         var imgLsit3 = document.querySelector("highlights > a");
         imgLsit3.href = highlightsLsit2;
     }
 })()
 
-//nav
-(function(){
-    var navList =document.querySelector(nav);
-    
-})()

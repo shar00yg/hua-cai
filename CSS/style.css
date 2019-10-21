@@ -295,7 +295,7 @@ button{
 
 .coggle_news{
         width: 518px;
-        height: 407px;
+        height: 528px;
 }
 .proclamation{
     width: 518px;
@@ -409,6 +409,11 @@ button{
 }
 
 /* 学院新闻 内容条 */
+.middle .showBoard .leftBoard .coggle_news > table{
+    width: 515px;
+    height: 144px;
+    margin: 6px 0;
+}
 .middle .showBoard .leftBoard .coggle_news .coggle_news_content li {
     width: 515px;
     height: 46px;
@@ -464,15 +469,19 @@ button{
   }
 /* 通知公告 */
 .middle .showBoard .leftBoard .proclamation .proclamation_content{
-    display: flex;
+    /* display: flex; */
     height:274px;
 }
 .middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0n+1){
-    flex: 6;
+    /* flex: 6; */
     margin: 6px 0;  
     margin-left: 8px;  
 }
-.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0n+1)  > tbody >tr>td>table>tbody>tr>td {
+.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0n+1)  > tbody >tr>td>table>tbody>tr{
+    display: flex;
+}
+.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0n+1)  > tbody >tr>td>table>tbody>tr>td :nth-child(0n+1) {
+    flex: 7;
     height: 19px;
     line-height: 19px;
     font-size: 18px;
@@ -485,7 +494,14 @@ button{
     margin: 4px 0;
     display: block;
 }
-.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0n+3){
+.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0n+1)  > tbody >tr>td>table>tbody>tr>td :nth-last-child() {
+    flex: 3;
+    font-size: 18px;
+    font-family: 'STHeitiSC-Light'; 
+    margin: 4px 0;
+    display: block;
+}
+/* .middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0n+3){
     flex: 4;
     margin: 6px 0;    
 }
@@ -496,21 +512,23 @@ button{
     font-size: 16px;
     margin: 4px 0;
     font-family: 'STHeitiSC-Light';
-    margin-left: 94px;
-}
+    margin-left: 40px;
+} */
 /* 亮点论文 */
-.middle .showBoard .rightBoard .highlights .highlights_content{
+.middle .showBoard .rightBoard .highlights .highlights_content li{
     display: flex;
-
 }
 .middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+1){
     flex: 4;
+    margin-left: 18px;
+    margin-top: 18px;
 }
 
-.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+3){
-    flex: 4;
+.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+2){
+    margin-top: 14px;
+    flex: 6;
 } 
-.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+3)tbody >tr>td>table>tbody>tr>td{
+.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+2) > tbody >tr>td>table>tbody>tr>td{
     height: 19px;
     line-height: 19px;
     font-size: 18px;
@@ -523,10 +541,8 @@ button{
     margin: 4px 0;
     display: block;
 }
-.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+5){
-    flex: 1;
-}
-.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+5){
+/* 
+.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+1){
     height: 19px;
     display: block;
     line-height: 19px;
@@ -534,7 +550,7 @@ button{
     margin: 4px 0;
     font-family: 'STHeitiSC-Light';
     margin-left: 94px;
-}
+} */
 .page_content .page_info > section .info_title .more .moreShow {
     display: block;
   }
