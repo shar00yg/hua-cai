@@ -1,0 +1,11 @@
+.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0) {
+  height: 19px;
+  font-size: 18px;
+}
+.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(2) {
+  display: none;
+}
+.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(3) {
+  height: 19px;
+  font-size: 16px;
+}

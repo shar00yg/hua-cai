@@ -174,3 +174,22 @@ function criticality() {
 //         news1.innerHTML = html1;
 //     }
 // })();
+
+//隐藏more 提取link
+(function(){
+    var noticeList = document.querySelector('.middle .leftBoard .proclamation .proclamation_content >li');
+    var highlights_contentList = document.querySelector('.middle .showBoard .rightBoard .highlights .highlights_content > li');
+    if(noticeList.children[3] != undefined){
+        noticeList.children[3].style='display:none';
+        noticeList.children[1].style='display:none';   
+        highlights_contentList.children[3].style='display:none';
+        highlights_contentList.children[1].style='display:none';
+        highlights_contentList.children[5].style='display:none';
+        var moreLsit2 = noticeList.children[3].children[0].href;
+        var imgLsit2 = document.querySelector("proclamation > a");
+        imgLsit2.href = moreLsit2;
+        var highlightsLsit2 = noticeList.children[3].children[0].href;
+        var imgLsit3 = document.querySelector("highlights > a");
+        imgLsit3.href = highlightsLsit2;
+    }
+})()

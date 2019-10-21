@@ -460,36 +460,78 @@ button{
     -webkit-box-orient: vertical;
   }
 /* 通知公告 */
-/* .middle .showBoard .leftBoard .proclamation .proclamation_content li {
+.middle .showBoard .leftBoard .proclamation .proclamation_content{
     display: flex;
+    height:274px;
 }
-.middle .showBoard .leftBoard .proclamation .proclamation_content li :before {
-    position: relative;
-    display: inline-block;
-    margin: 0 8px;
-    content: '';
-    width: 6px;
-    height: 6px;
-    transform: rotate(45deg);
-    border: 1px solid #5a92cd;
+.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0n+1){
+    flex: 6;
+    margin: 6px 0;  
+    margin-left: 8px;  
 }
-.middle .showBoard .leftBoard .proclamation .proclamation_content li :before .left-news1 {
-    flex: 8;
-    margin: 0 4px;
+.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0n+1)  > tbody >tr>td>table>tbody>tr>td {
+    height: 19px;
+    line-height: 19px;
     font-size: 18px;
-    font-family: 'STHeitiSC-Light';
-    height: 19px;
-    line-height: 19px;
-    text-align: center;
+    font-family: 'STHeitiSC-Light';    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin: 4px 0;
+    display: block;
 }
-.middle .showBoard .leftBoard .proclamation .proclamation_content li :before .right-time1 .time{
-    flex: 1;
+.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0n+3){
+    flex: 4;
+    margin: 6px 0;    
+}
+.middle .showBoard .leftBoard .proclamation .proclamation_content li :nth-child(0n+3) > tbody >tr>td>table>tbody>tr>td {
+    height: 19px;
+    display: block;
+    line-height: 19px;
     font-size: 16px;
+    margin: 4px 0;
     font-family: 'STHeitiSC-Light';
+    margin-left: 94px;
+}
+/* 亮点论文 */
+.middle .showBoard .rightBoard .highlights .highlights_content{
+    display: flex;
+
+}
+.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+1){
+    flex: 4;
+}
+
+.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+3){
+    flex: 4;
+} 
+.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+3)tbody >tr>td>table>tbody>tr>td{
     height: 19px;
     line-height: 19px;
-    text-align: center;
-} */
+    font-size: 18px;
+    font-family: 'STHeitiSC-Light';    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin: 4px 0;
+    display: block;
+}
+.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+5){
+    flex: 1;
+}
+.middle .showBoard .rightBoard .highlights .highlights_content li :nth-child(0n+5){
+    height: 19px;
+    display: block;
+    line-height: 19px;
+    font-size: 16px;
+    margin: 4px 0;
+    font-family: 'STHeitiSC-Light';
+    margin-left: 94px;
+}
 .page_content .page_info > section .info_title .more .moreShow {
     display: block;
   }
