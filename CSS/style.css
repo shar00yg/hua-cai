@@ -105,6 +105,9 @@ td {
     margin: 0 auto;
     z-index: 1;
 }
+.header .nav>table{
+    display: none;
+}
 
 .header .nav .nav_first {
     width: 1299px;

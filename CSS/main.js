@@ -193,3 +193,9 @@ function criticality() {
         imgLsit3.href = highlightsLsit2;
     }
 })()
+
+//nav
+(function(){
+    var navList =document.querySelector(nav);
+    
+})()
